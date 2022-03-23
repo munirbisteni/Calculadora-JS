@@ -1,0 +1,79 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #073278;
+}
+
+.container{
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.calcContainer{
+    display:grid;
+    height:500px;
+    width:350px;
+    justify-content:center;
+    grid-gap: 2px; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "finder   finder finder finder  memory"
+                         "bPorcent bCE    bC     bDell   memory"
+                         "bFrac    bPot   bSQR   bDiv    memory"
+                         "bSeven   bEigth bNine  bMult   memory"
+                         "bFour    bFive  bSix   bMen    memory"
+                         "bOne     bTwo   bThree bPlus   memory"
+                         "bSignal  bZero  bComma bEquals memory"
+}
+
+/* GRID AREA BUTTONS */
+.Porcent{grid-area: bPorcent;}
+.CE{grid-area: bCE;}
+.C{grid-area: bC;}
+.Dell{grid-area:bDell;}
+.Frac{grid-area:bFrac;}
+.Pot{grid-area:bPot;}
+.SQR{grid-area:bSQR;}
+.Div{grid-area:bDiv;}
+.seven{grid-area:bSeven;}
+.eigth{grid-area:bEigth;}
+.nine{grid-area:bNine;}
+.mult{grid-area:bMult;}
+.four{grid-area:bFour;}
+.five{grid-area:bFive;}
+.six{grid-area:bSix;}
+.men{grid-area:bMen;}
+.one{grid-area:bOne;}
+.two{grid-area:bTwo;}
+.three{grid-area:bThree;}
+.plus{grid-area:bPlus;}
+.signal{grid-area:bSignal;}
+.zero{grid-area:bZero;}
+.comma{grid-area:bComma;}
+.equals{grid-area:bEquals;}
+/* END GRID AREA BUTTONS */
+
+.visor, .hist, .button{
+    box-shadow: 2px 2px 2px black;
+    opacity: 0.8;
+    border-radius: 5px;
+}
+
+.visor{
+    background-color:rgb(209, 209, 209);
+    height: 100px;
+    grid-area: finder;
+}
+
+.hist{
+    background-color:rgb(146, 146, 146);
+    grid-area:memory;
+}
+
+.button{
+    background-color: rgb(56, 56, 56);
+}
