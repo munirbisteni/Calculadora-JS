@@ -1,1 +1,1 @@
-Olá! criei essa calculadora para aprender a usar Grid e animações!
+Olá! criei essa calculadora para aprender a usar Grid e animações!  
